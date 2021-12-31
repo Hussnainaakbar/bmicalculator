@@ -1,5 +1,6 @@
 import 'package:bmicalculator/custom_box.dart';
 import 'package:flutter/material.dart';
+import 'package:glass/glass.dart';
 
 class Resulst extends StatefulWidget {
   final double result;
@@ -254,16 +255,19 @@ class _ResulstState extends State<Resulst> {
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 5.0),
-                child: Text(
-                  textR,
-                  //  maxLines: 4,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    letterSpacing: -1,
-                    fontSize: 19,
-                    color: Colors.black,
+                child: Container(
+                  child: Text(
+                    textR,
+                    //  maxLines: 4,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      letterSpacing: -1,
+                      fontSize: 19,
+                      color: Colors.black,
+                    ),
                   ),
-                ),
+                ).asGlass(
+                    tintColor: const Color(0xffFF6974), blurX: 30, blurY: 30),
               ),
               normal == false
                   ? Padding(
