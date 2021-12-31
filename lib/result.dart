@@ -267,7 +267,7 @@ class _ResulstState extends State<Resulst> {
                     ),
                   ),
                 ).asGlass(
-                    tintColor: const Color(0xffFF6974), blurX: 30, blurY: 30),
+                    tintColor: const Color(0xffFAA719), blurX: 30, blurY: 30),
               ),
               normal == false
                   ? Padding(
